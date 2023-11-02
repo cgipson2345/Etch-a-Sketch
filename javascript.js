@@ -9,3 +9,16 @@ for(let i = 0; i < (16 * 16); i++){
     squareGrid.classList.add("squareGrid")
     container.appendChild(squareGrid);
 }
+
+const Grids = document.querySelectorAll('.squareGrid');
+
+Grids.forEach((grid)=> 
+
+{
+    grid.addEventListener('mouseover',(e) => {
+        // @ts-ignore
+        e.target.style.backgroundColor = 'red';
+
+    });
+
+});
